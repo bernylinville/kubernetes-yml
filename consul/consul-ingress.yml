@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-consul
+  namespace: uatfop
+  annotations:
+    kubernets.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: k8stest.o-banks.cn
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/consul"
+        backend:
+          service:
+            name: consul
+            port:
+              number: 8500

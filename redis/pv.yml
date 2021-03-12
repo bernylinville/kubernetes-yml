@@ -1,0 +1,102 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-nfs-pv1
+  namespace: uatfop
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteMany
+  volumeMode: Filesystem
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: "redis"
+  nfs:
+    server: 192.168.50.43
+    path: "/data/k8s/redis/pv1"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-nfs-pv2
+  namespace: uatfop
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteMany
+  volumeMode: Filesystem
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: "redis"
+  nfs:
+    server: 192.168.50.43
+    path: "/data/k8s/redis/pv2"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-nfs-pv3
+  namespace: uatfop
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteMany
+  volumeMode: Filesystem
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: "redis"
+  nfs:
+    server: 192.168.50.43
+    path: "/data/k8s/redis/pv3"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-nfs-pv4
+  namespace: uatfop
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteMany
+  volumeMode: Filesystem
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: "redis"
+  nfs:
+    server: 192.168.50.43
+    path: "/data/k8s/redis/pv4"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-nfs-pv5
+  namespace: uatfop
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteMany
+  volumeMode: Filesystem
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: "redis"
+  nfs:
+    server: 192.168.50.43
+    path: "/data/k8s/redis/pv5"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-nfs-pv6
+  namespace: uatfop
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteMany
+  volumeMode: Filesystem
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: "redis"
+  nfs:
+    server: 192.168.50.43
+    path: "/data/k8s/redis/pv6"
